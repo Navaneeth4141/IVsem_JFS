@@ -1,7 +1,6 @@
 class CountEdges{
 	public static void main(String args[]){
-		int adj_matrix[][]={ {0,1,0,1,0},{1,0,1,1,0},{0,1,0,0,1},{1,1,0,0,1},
-																{0,0,1,1,0}	};
+		int adj_matrix[][]={ {0,1,0,1,0},{1,0,1,1,0},{0,1,0,0,1},{1,1,0,0,1},{0,0,1,1,0}};
 		int one_ctr=0;
 		for(int i=0; i < adj_matrix.length; i++){
 			for(int j=0; j < adj_matrix.length; j++){
