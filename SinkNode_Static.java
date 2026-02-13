@@ -1,4 +1,4 @@
-public class SinkNode{
+public class SinkNode_Static{
     public static void main(String args[]){
         int adj_matrix[][] = new int[5][5];
         adj_matrix = new int[][]{{0, 1, 1 ,0 ,1},{0, 0, 0, 1, 0},{0, 0, 0, 1, 1},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0}};
