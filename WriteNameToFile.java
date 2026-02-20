@@ -7,6 +7,7 @@ public class WriteNameToFile {
         try {
             Scanner sc = new Scanner(System.in);
             FileWriter writer = new FileWriter("name.txt",true);
+            System.out.print("Enter your message : ");
             writer.write(sc.nextLine());
             writer.close();
             System.out.println("Successfully wrote to the file");
