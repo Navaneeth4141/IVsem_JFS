@@ -4,13 +4,19 @@ import java.util.Scanner;
 
 public class WriteNameToFile {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many number of names? " );
+        int n = sc.nextInt();
+	sc.nextLine();
         try {
-            Scanner sc = new Scanner(System.in);
-            FileWriter writer = new FileWriter("name.txt");
-            System.out.print("Enter your message : ");
-            writer.write(sc.nextLine());
+            FileWriter writer = new FileWriter("name.txt", true);
+            for(int i = 1; i <= n; i++) {
+            System.out.print("Enter your name : ");
+            String name = sc.nextLine();
+            writer.write(name + "\n");
+            }
             writer.close();
-	    sc.close();
+	        sc.close();
             System.out.println("Successfully wrote to the file");
         } catch (IOException e) {
             System.out.println("An error occurred");
