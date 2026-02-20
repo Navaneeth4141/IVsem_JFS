@@ -6,10 +6,13 @@ import java.util.Scanner;
 public class ReadNameFromFile {
     public static void main(String[] args) {
         try {
-            File file = new File("name.txt");
-            Scanner sc = new Scanner(file);
-            while(sc.hasNextLine()){
-                String s = sc.nextLine();
+            System.out.print("Enter the filename : ");
+            Scanner sc = new Scanner(System.in);
+            String filename = sc.nextLine();
+            File file = new File(filename);
+            Scanner sc1 = new Scanner(file);
+            while(sc1.hasNextLine()){
+                String s = sc1.nextLine();
                 System.out.println(s);
             }
             sc.close();
