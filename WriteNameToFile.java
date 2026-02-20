@@ -10,6 +10,7 @@ public class WriteNameToFile {
             System.out.print("Enter your message : ");
             writer.write(sc.nextLine());
             writer.close();
+	    sc.close();
             System.out.println("Successfully wrote to the file");
         } catch (IOException e) {
             System.out.println("An error occurred");
