@@ -9,7 +9,7 @@ public class WriteNameToFileScanner {
         int nn = sc.nextInt();
 	sc.nextLine();
         try {
-            FileWriter writer = new FileWriter("name.txt", true); 
+            FileWriter writer = new FileWriter("name.txt"); 
             // If true parameter is removed in the above statement, everytime the above line 
             // is executed new file will be made, if true is used changes will be made to the 
             // exisiting file only
