@@ -6,11 +6,11 @@ public class WriteNameToFileScanner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("How many number of names? " );
-        int n = sc.nextInt();
+        int nn = sc.nextInt();
 	sc.nextLine();
         try {
             FileWriter writer = new FileWriter("name.txt", true);
-            for(int i = 1; i <= n; i++) {
+            for(int i = 1; i <= nn; i++) {
             System.out.print("Enter your name : ");
             String name = sc.nextLine();
             writer.write(name + "\n");
