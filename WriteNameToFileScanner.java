@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class WriteNameToFile {
+public class WriteNameToFileScanner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("How many number of names? " );
