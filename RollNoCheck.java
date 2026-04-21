@@ -26,41 +26,41 @@ public class RollNoCheck{
         String branchname;
         switch(branchCode){
             case "01" : 
-                branchname = " CIVIL";
+                branchname = "CIVIL";
                 break;
             case "02" :
-                branchname = " EEE";
+                branchname = "EEE";
                 break;
             case "03" : 
-                branchname = " MECH";
+                branchname = "MECH";
             case "04" : 
-                branchname = " ECE";
+                branchname = "ECE";
                 break;
             case "05" : 
-                branchname = " CSE";
+                branchname = "CSE";
                 break;
             case "62" : 
-                branchname = " CS";
+                branchname = "CS";
                 break;
             case "66" : 
-                branchname = " CSM";
+                branchname = "CSM";
                 break;
             case "67" : 
-                branchname = " DS";
+                branchname = "DS";
                 break;
             case "33" : 
-                branchname = " CSIT";
+                branchname = "CSIT";
                 break;
             case "12" : 
-                branchname = " IT";
+                branchname = "IT";
                 break;
             case "21" : 
-                branchname = " AERO";
+                branchname = "AERO";
                 break;
             default : 
                 branchname = "";
                 break;
         }
-        return name + branchname;
+        return name + " " + branchname;
     }
 }
