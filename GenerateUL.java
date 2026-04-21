@@ -27,8 +27,6 @@ public class GenerateUL {
 
         System.out.println("Original List : " + numbers);
 
-        List<Integer> uniqueNumbers = generateUniqueList(numbers);
-
-        System.out.println("Unique List   : " + uniqueNumbers);
+        System.out.println("Unique List : " + generateUniqueList(numbers));
     }
 }
